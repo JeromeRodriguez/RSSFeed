@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import Foundation
+import Alamofire
 
 class ViewController: UIViewController {
 
+    let session = URLSession.shared
+    let url = URL(string: "https://developer.marvel.com/docs")!
+
+    Alamofire.request()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-
